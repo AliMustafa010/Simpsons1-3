@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpson's 1/3 Rule Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.0/math.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Black and Blue Simple Creative Illustrative Dragons E-Sport Logo.png" type="image/x-icon">
+</head>
+<body class="cover">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Beast Coder</a>
+            <div class="navbar-brand-center d-none d-md-block">
+                <a class="navbar-brand" href="#">Simpsons Calculator</a>
+            </div>
+            <form class="d-flex ms-auto d-none d-md-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-title">Simpson's 1/3 Rule</div>
+            <a href="#simp" class="hero-button">Calculate</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="full-height">
+            <div class="form-container" id="simp">
+                <h4>Simpson's Rule Formula:</h4>
+                <div>
+                    <p>
+                        b<br>∫ f(x) dx ≈ (h / 3) × [f(a) + 4f(x<sub>1</sub>) + 2f(x<sub>2</sub>) + 4f(x<sub>3</sub>) + ... + 2f(x<sub>n-2</sub>) + 4f(x<sub>n-1</sub>) + f(b)]<br>a
+                    </p>
+                    <p>Where:<br>
+                        - <b>h</b> is the width of each interval,<br>
+                        - <b>n</b> is the number of intervals (must be even),<br>
+                        - <b>a</b> is the lower limit,<br>
+                        - <b>b</b> is the upper limit.
+                    </p>
+                </div>
+                <form id="simpsonsForm" class="row g-3">
+                    <div class="col-md-12">
+                        <label for="equation" class="form-label">Enter the Equation (in terms of x):</label>
+                        <input type="text" id="equation" class="form-control" placeholder="e.g. sin(x) + cos(x)" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lowerLimit" class="form-label">Lower Limit (a):</label>
+                        <input type="text" id="lowerLimit" class="form-control" placeholder="e.g. 0 or pi/2" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="upperLimit" class="form-label">Upper Limit (b):</label>
+                        <input type="text" id="upperLimit" class="form-control" placeholder="e.g. pi" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="intervals" class="form-label">Number of Intervals (n - must be even):</label>
+                        <input type="number" id="intervals" class="form-control" placeholder="e.g. 4" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exactValue" class="form-label">Enter the Exact Value (optional):</label>
+                        <input type="text" id="exactValue" class="form-control" placeholder="e.g. 3.1416">
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-primary" onclick="calculateSimpsons()">Calculate</button>
+                    </div>
+                </form>
+                <div id="result" class="mt-4"></div>
+            </div>
+            <div class="cover"></div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Beast Coder &copy; 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar-custom {
+    background: linear-gradient(135deg, #2c3e50, #8e44ad); /* Dark blue-purple gradient */
+    color: white;
+}
+.navbar-custom .navbar-brand, .navbar-custom .form-control, .navbar-custom .btn {
+    color: white;
+}
+.navbar-brand-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+.navbar-custom .form-control {
+    background: #ffffff;
+    border: none;
+}
+.navbar-custom .btn-outline-success {
+    color: white;
+    border-color: white;
+}
+.navbar-custom .btn-outline-success:hover {
+    background-color: white;
+    color: #2c3e50;
+}
+
+
+.hero-section {
+    position: relative;
+    height: 85vh;
+    background: url('./24600855_sl_031420_28950_10.jpg') no-repeat center center/cover;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Ensure overlay is behind the text and button */
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    margin-top: -100px;
+}
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.hero-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    background-color: #8e44ad; /* Button background color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+.hero-button:hover {
+    background-color: #732d91; /* Darker shade for button hover effect */
+}
+
+
+.full-height {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5dc; /* Cream color */
+    position: relative;
+    height: 85vh;
+    background: url('./24600855_sl_031420_28950_10.jpg') no-repeat center center/cover;
+}
+.form-container {
+    width: 90%;
+     /* Optional: Max width for larger screens */
+    margin: auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 300px;
+}
+.form-label {
+    font-weight: bold;
+}
+.form-control {
+    border-radius: 4px; /* Slightly rounded input fields */
+}
+.btn-primary {
+    background-color: #8e44ad; /* Button background color */
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #732d91; /* Darker shade for button hover effect */
+}
+.cover{
+    position: relative;
+    height: 85vh;
+    background: url('./24600855_sl_031420_28950_10.jpg') center center/cover;
+}
+#result{
+    color: black;
+}
+.footer {
+    color: white;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #2c3e50, #8e44ad);
+    margin-top: 1100px;
+}
+.footer p {
+    margin: 0;
+}
