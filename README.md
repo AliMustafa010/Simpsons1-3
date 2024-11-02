@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AliMustafa010/simpsons1/3.git
+   git clone https://github.com/AliMustafa010/simpsons1-3.git
    ```
 
 2. Navigate to the project directory:
