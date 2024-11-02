@@ -24,12 +24,12 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/simpsons-rule-calculator.git
+   git clone https://github.com/AliMustafa010/simpsons1/3.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd simpsons-rule-calculator
+   cd Math Project
    ```
 
 3. Open `index.html` in your web browser.
