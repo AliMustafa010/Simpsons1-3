@@ -41,13 +41,6 @@ To run this project locally, follow these steps:
 3. Click the "Calculate" button to see the result.
 4. The estimated value of the integral will be displayed on the screen.
 
-## Example
-
-Given the function \( f(x) = x^2 \) and limits from 0 to 1, the application will use Simpson's 1/3rd rule to calculate the integral:
-
-\[
-\int_{0}^{1} x^2 \, dx
-\]
 
 ### Result
 The estimated value of the integral will be shown after clicking the "Calculate" button.
@@ -56,19 +49,4 @@ The estimated value of the integral will be shown after clicking the "Calculate"
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
-
-- [Bootstrap](https://getbootstrap.com) for the CSS framework.
-- [W3Schools](https://www.w3schools.com) for helpful tutorials and references.
-
-## Contact
-
-For any questions or feedback, please feel free to reach out:
-
-- Your Name
-- Your Email
-- Your GitHub Profile
-
 ```
-
-Feel free to customize the placeholders (like your GitHub link, name, and contact information) to match your specific project and personal details!
