@@ -1,4 +1,3 @@
-```markdown
 # Simpson's 1/3rd Rule Numerical Method Calculator
 
 ## Overview
